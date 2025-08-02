@@ -1,7 +1,6 @@
 # Package CI workflow
 # cf. https://docs.astral.sh/uv/guides/integration/github/
 
-
 name: auto-appearance-ci
 on: [push]
 jobs:
