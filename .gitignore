@@ -1,0 +1,10 @@
+.DS_Store
+.mypy_cache
+.python-version
+.ruff_cache
+.venv
+.vscode
+
+__pycache__/
+
+deploy/

@@ -1,0 +1,28 @@
+[project]
+name = "auto-appearance"
+version = "0.1.0"
+description = "Automatically change the macOS system appearance with the sun."
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "Tom Shafer", email = "tom@tshafer.com" }]
+requires-python = ">=3.11"
+dependencies = ["platformdirs>=4.3.8", "pyephem>=9.99", "typer-slim>=0.16.0"]
+
+[project.scripts]
+auto-appearance = "auto_appearance.__main__:cli"
+
+[build-system]
+requires = ["uv_build>=0.8.4,<0.9.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = ["ruff>=0.12.7", "ty>=0.0.1a16"]
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.lint]
+extend-select = ["E", "F", "I", "B", "S"]
+
+[tool.ruff.lint.isort]
+no-lines-before = ["third-party", "first-party"]
