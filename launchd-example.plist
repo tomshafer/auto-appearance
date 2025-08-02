@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>Label</key>
+        <string>com.tshafer.auto-appearance</string>
+
+        <key>Program</key>
+        <string><!-- Path to uvx --></string>
+
+        <key>ProgramArguments</key>
+        <array>
+            <string><!-- Path to uvx --></string>
+            <string>auto-appearance</string>
+            <string>--lat=<!-- Yours here --></string>
+            <string>--lon=<!-- Yours here --></string>
+        </array>
+
+        <key>WorkingDirectory</key>
+        <string><!-- Yours here --></string>
+
+        <key>StandardErrorPath</key>
+        <string><!-- Yours here --></string>
+
+        <key>StartInterval</key>
+        <integer>900</integer>
+
+        <key>RunAtLoad</key>
+        <true />
+
+        <key>KeepAlive</key>
+        <false />
+
+        <key>ProcessType</key>
+        <string>Background</string>
+    </dict>
+</plist>
